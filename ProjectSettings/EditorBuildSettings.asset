@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Koreography/Scenes/Gymnopedie.unity
     guid: ec9fd5fe2560e457bab78f7f49a5aaf4
+  - enabled: 1
+    path: Assets/Koreography/Scenes/Strauss.unity
+    guid: 1bab84e0e44fd254285e00d2cff6dda1
+  - enabled: 1
+    path: Assets/Koreography/Scenes/BandSwing.unity
+    guid: 64b7cd40975e1c04eb141fbf619de7af
+  - enabled: 1
+    path: Assets/Koreography/Scenes/AddyAce.unity
+    guid: 2126b7610b84f0f4c87ace69848e5f76
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: df272d4e79a849b43882cbcab0e7d681,
       type: 2}
