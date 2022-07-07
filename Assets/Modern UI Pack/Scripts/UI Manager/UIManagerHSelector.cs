@@ -68,6 +68,8 @@ namespace Michsky.UI.ModernUIPack
                 }
             }
 
+           
+
             for (int i = 0; i < texts.Count; ++i)
             {
                 TextMeshProUGUI currentText = texts[i].GetComponent<TextMeshProUGUI>();
