@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SonicBloom.Koreo;
 using Michsky.UI.ModernUIPack;
+using DG.Tweening;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -21,10 +22,7 @@ public class GameManagerScript : MonoBehaviour
     private int score;
     public ProgressBar scoreBar;
 
-    
-
-    
-
+    public CanvasGroup textToFade;
 
 
     // Local cache of the Koreography loaded into the Koreographer component.
@@ -73,6 +71,8 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         InitializeLeadIn();
 
         
@@ -82,6 +82,13 @@ public class GameManagerScript : MonoBehaviour
         scoreBar.speed = 0;
         UpdateScore(0);
 
+        Invoke("FadeText", 1);
+
+    }
+
+    void FadeText()
+    {
+        textToFade.DOFade(0, 1.5f);
     }
 
     void PlayAudio()

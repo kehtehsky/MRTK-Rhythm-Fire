@@ -41,12 +41,12 @@ GameObject:
   - component: {fileID: 6257817276924229331}
   - component: {fileID: 6257817276924229328}
   - component: {fileID: 6257817276924229329}
-  - component: {fileID: 6257817276924229334}
   - component: {fileID: 6257817276924229335}
+  - component: {fileID: 7515664291471843975}
   - component: {fileID: 4080304159950172412}
   - component: {fileID: 2384811279294225638}
   m_Layer: 0
-  m_Name: Target Blue
+  m_Name: Target Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6257817276924229332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4892569, y: 1.5959933, z: 5}
+  m_LocalPosition: {x: 0.93699306, y: 1.0820903, z: 5}
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 3854762736398757740}
@@ -116,24 +116,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6257817276924229334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6257817276924229332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5b82cbe2647f24c9f1b44ee43b95b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitParticle: {fileID: 1272483159307946, guid: cc0bdc9defd87ef4fba2c3954f1bb0d1,
-    type: 3}
-  respawnParticle: {fileID: 1250201152801508, guid: dd46de4320f3d1b4087b5f9c0a24ab36,
-    type: 3}
-  targetRenderer: {fileID: 6257817276924229329}
-  targetCollider: {fileID: 6257817276924229335}
 --- !u!65 &6257817276924229335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -147,6 +129,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7515664291471843975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6257817276924229332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b79ffcdc702ee64ea25c6c7a109db2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitParticle: {fileID: 1272483159307946, guid: cc0bdc9defd87ef4fba2c3954f1bb0d1,
+    type: 3}
+  respawnParticle: {fileID: 1250201152801508, guid: dd46de4320f3d1b4087b5f9c0a24ab36,
+    type: 3}
+  targetRenderer: {fileID: 6257817276924229329}
+  targetCollider: {fileID: 6257817276924229335}
 --- !u!114 &4080304159950172412
 MonoBehaviour:
   m_ObjectHideFlags: 0
