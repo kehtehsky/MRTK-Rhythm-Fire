@@ -6,7 +6,6 @@ using Microsoft.MixedReality.Toolkit.Input;
 public class PewPewSpawnScript : MonoBehaviour
 {
     public GameObject PrefabToSpawn;
-    public Transform spawnPosition;
     public float speed = 1200;
 
     
